@@ -10,7 +10,10 @@ import { FormGroup, FormControl, Validators,FormArray } from '@angular/forms';
 })
 export class ListdataComponent implements OnInit , AfterViewInit {
   @ViewChild('search', { static: false }) search: any;
-  @ViewChild('searchgender', { static: false }) searchgender: any;
+  
+  countries: any = ['India', 'usa', 'britan', 'japan', 'india', 'oman', 'kuridistan', 'urugyay', 'bhutan', ' kazhakistan'];
+  
+  gender: any = ['Male','Female'];
   country = new FormGroup({ 
     'countryname':new FormControl(),
  
@@ -158,13 +161,52 @@ export class ListdataComponent implements OnInit , AfterViewInit {
     this.getDataJson();
     // this.findAll();
   }
-  onChangeg($event)
+  onChangeg(e)
   {
-    window.alert("hi");
+    console.log(e.target.value);
+    let value=e.target.value.toLowerCase();
+
+    const keys = Object.keys(this.temp[0]);
+    // assign filtered matches to the active datatable
+    this.rows = this.temp.filter(item => {
+      console.log(item[keys[1]])
+      if (
+        (item[keys[1]] &&
+          item[keys[1]]
+            .toString()
+            .toLowerCase()
+            .indexOf(value) == 0) ||
+        !value ||value == 'choose gender'
+      ) {
+        // found match, return true to add to result set
+        return true;
+      }
+      // iterate through each row's column data
+      
+    });
   }
-  onChangec($event)
+  onChangec(c)
   {
-    window.alert("hi")
+    let value=c.target.value.toLowerCase();
+console.log(c)
+    const keys = Object.keys(this.temp[0]);
+    // assign filtered matches to the active datatable
+    this.rows = this.temp.filter(item => {
+     // console.log(item[keys[2]])
+      if (
+        (item[keys[2]] &&
+          item[keys[2]]
+            .toString()
+            .toLowerCase()
+            .indexOf(value) == 0) ||
+        !value ||value == 'choose country'
+      ) {
+        // found match, return true to add to result set
+        return true;
+      }
+      // iterate through each row's column data
+      
+    });
   }
 
 }
