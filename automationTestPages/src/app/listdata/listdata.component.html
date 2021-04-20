@@ -17,6 +17,25 @@
             aria-label="Search"
             aria-describedby="basic-addon1"
           />
+          <form [formGroup]="country"><select formControlName="countryname" (change)="onChangec($event)">
+            <option  >usa</option>
+            <option  >usa</option>
+          </select>
+          <select formControlName="gender" (change)="onChangeg($event)">
+            <option >Male</option>
+            <option  >female</option>
+          </select>
+        </form>
+          <div class="col-md-8">
+            <input
+              #search
+              id="searchgender"
+              type="text"
+              class="form-control"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="basic-addon1"
+            />
         </div>
       </div>
     </div>

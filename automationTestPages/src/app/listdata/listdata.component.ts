@@ -2,7 +2,7 @@ import { Component, OnInit,ViewChild, AfterViewInit } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { fromEvent } from 'rxjs';
 import { map, debounceTime } from 'rxjs/operators';
-
+import { FormGroup, FormControl, Validators,FormArray } from '@angular/forms';
 @Component({
   selector: 'app-listdata',
   templateUrl: './listdata.component.html',
@@ -10,13 +10,19 @@ import { map, debounceTime } from 'rxjs/operators';
 })
 export class ListdataComponent implements OnInit , AfterViewInit {
   @ViewChild('search', { static: false }) search: any;
-
-  name = 'Ngx Datatables Filter All Columns';
+  @ViewChild('searchgender', { static: false }) searchgender: any;
+  country = new FormGroup({ 
+    'countryname':new FormControl(),
+ 
+    'gender':new FormControl(),
+    
+  })
   public temp: Array<object> = [];
   public rows: Array<object> = [];
   public columns: Array<object>;
   constructor(private httpClient: HttpClient) { }
   ngAfterViewInit(): void {
+  
     // Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
     // Add 'implements AfterViewInit' to the class.
     fromEvent(this.search.nativeElement, 'keydown')
@@ -28,30 +34,30 @@ export class ListdataComponent implements OnInit , AfterViewInit {
         this.updateFilter(value);
       });
   }
-
+  
   updateFilter(val: any) {
     const value = val.toString().toLowerCase().trim();
     // get the amount of columns in the table
     const count = this.columns.length;
+    
     // get the key names of each column in the dataset
     const keys = Object.keys(this.temp[0]);
     // assign filtered matches to the active datatable
     this.rows = this.temp.filter(item => {
-      // iterate through each row's column data
-      for (let i = 0; i < count; i++) {
-        // check for a match
-        if (
-          (item[keys[i]] &&
-            item[keys[i]]
-              .toString()
-              .toLowerCase()
-              .indexOf(value) !== -1) ||
-          !value
-        ) {
-          // found match, return true to add to result set
-          return true;
-        }
+      console.log(item[keys[0]])
+      if (
+        (item[keys[0]] &&
+          item[keys[0]]
+            .toString()
+            .toLowerCase()
+            .indexOf(value) == 0) ||
+        !value
+      ) {
+        // found match, return true to add to result set
+        return true;
       }
+      // iterate through each row's column data
+      
     });
 
     // Whenever the filter changes, always go back to the first page
@@ -151,6 +157,14 @@ export class ListdataComponent implements OnInit , AfterViewInit {
 
     this.getDataJson();
     // this.findAll();
+  }
+  onChangeg($event)
+  {
+    window.alert("hi");
+  }
+  onChangec($event)
+  {
+    window.alert("hi")
   }
 
 }
