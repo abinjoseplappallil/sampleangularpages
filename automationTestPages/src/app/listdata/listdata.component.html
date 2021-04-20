@@ -14,16 +14,18 @@
         <div class="col-md-4">
           <form [formGroup]="country">
             <select formControlName="countryname" (change)="onChangec($event)">
-              <option>usa</option>
-              <option>usa</option>
+              <option selected >Choose country</option>
+
+              <option *ngFor="let co of  countries">{{co}}</option>
             </select>
           </form>
         </div>
         <div class="col-md-4">
           <form [formGroup]="country">
             <select formControlName="gender" (change)="onChangeg($event)">
-              <option>Male</option>
-              <option>female</option>
+              <option selected >Choose Gender</option>
+
+              <option *ngFor="let ge of gender ">{{ge}}</option>
             </select>
           </form>
         </div>
