@@ -1,1 +1,37 @@
-<p>listdata works!</p>
+<div style="align-content: center;">
+<h3>
+   
+  </h3>
+  <p>search</p>
+  
+  <div class="card mb-5">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-8">
+          <input
+            #search
+            id="search"
+            type="text"
+            class="form-control"
+            placeholder="Search"
+            aria-label="Search"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+      </div>
+    </div>
+  
+    <ngx-datatable
+      #table
+      class="bootstrap ngx-datatable"
+      [columns]="columns"
+      [rows]="rows"
+      [columnMode]="'force'"
+      [headerHeight]="35"
+      [rowHeight]="'auto'"
+      [footerHeight]="50"
+      [limit]="10"
+    >
+    </ngx-datatable>
+  </div>
+</div>
