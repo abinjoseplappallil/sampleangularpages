@@ -4,6 +4,12 @@
 .justify-content-center {
     justify-content: center!important;
     margin-top: 165px;
+   
+}
+.jumbotron{
+    width:370px;
+    height:500px;
+    border-radius:15px;
 }
 label{
     float:left
@@ -20,7 +26,7 @@ label{
  }
 
  .btn{
-    font-weight: bold;
+    
     width: 230px;
     margin: 0 35px 20px ;
     height: 45px;
@@ -28,12 +34,38 @@ label{
     border-radius: 5px;
     outline: none;
     border: none;
-    background: #EE9BA3;
-    color: black;
+    background: #000000;
+    color: rgb(240, 230, 230);
     font-size: 14px;
  }
  .nav-link {
     display: block;
     padding: .5rem 1rem;
     text-align: center;
+}
+select {
+    word-wrap: normal;
+    width: 273px;
+    height: 38px;
+    border: 1px solid #ced4da;
+    border-top-color: rgb(206, 212, 218);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(206, 212, 218);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(206, 212, 218);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(206, 212, 218);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+h1{
+    color: black;
 }

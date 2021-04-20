@@ -1,45 +1,41 @@
 <div class="d-flex justify-content-center">
-    <div class="c2">
-        <form [formGroup]="form" (ngSubmit)="submit()">
-            <div>
-                <div class="main">
-                    <h1>Registration</h1>
-                </div>
-                <div class="row jumbotron">
-                    <div class="form-group">
-                        <label for="name"> Name:</label>
-                        <input type="text" class="form-control" formControlName="name" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="gender">Gender:</label>
-                        <br>
-                        <div>
-                            <input type="radio" value="male" formControlName="gender">Male
-                        </div>
-                        <div style="float: left;">
-                            <input type="radio" value="female" formControlName="gender">Female
-                        </div>
-                    </div>
-                    <div>
-                        <label for="dob">Date Of Birth:</label>
-                        <input class="form-control" type="date" formControlName="dob" placeholder="DOB">
-                    </div>
-                    <div class="main3">
-                        <label for="country">Country </label>
-                        <select formControlName="country">
-                            <option *ngFor="let c of countryList">
-                                {{c.name}}
-                            </option>
-                        </select>
-                    </div>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        <div class="main">
+            <h1>Registration</h1>
+        </div>
+        <div class="row jumbotron">
+            <div class="form-group">
+                <label for="name"> Name:</label>
+                <input type="text" class="form-control" formControlName="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <br>
+                <div>
+                    <input type="radio" value="male" formControlName="gender">Male
                 </div>
                 <div>
-                    <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
-                    <a class="nav-link" [routerLink]="['/list']" [routerLinkActive]="['selection_active']">See The
-                        List</a>
+                    <input type="radio" value="female" formControlName="gender">Female
                 </div>
-
             </div>
-        </form>
-    </div>
+            <div>
+                <label for="dob">Date Of Birth:</label>
+                <input class="form-control" type="date" formControlName="dob" placeholder="DOB">
+            </div>
+            <div class="main3">
+                <label for="country">Country:</label>
+                <br>
+                <select formControlName="country">
+                    <option *ngFor="let c of countryList">
+                        {{c.name}}
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
+            <a class="nav-link" [routerLink]="['/list']" [routerLinkActive]="['selection_active']">See The
+                List</a>
+        </div>
+    </form>
 </div>
