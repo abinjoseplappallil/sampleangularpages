@@ -185,6 +185,33 @@ export class ListdataComponent implements OnInit , AfterViewInit {
       
     });
   }
+  onKeyUp(x) { // appending the updated value to the variable
+console.log(x.target.value);
+const value = x.target.value.toLowerCase().trim();
+    // get the amount of columns in the table
+    const count = this.columns.length;
+    
+    // get the key names of each column in the dataset
+    const keys = Object.keys(this.temp[0]);
+    // assign filtered matches to the active datatable
+    this.rows = this.temp.filter(item => {
+      console.log(item[keys[0]])
+      if (
+        (item[keys[0]] &&
+          item[keys[0]]
+            .toString()
+            .toLowerCase()
+            .indexOf(value) == 0) ||
+        !value
+      ) {
+        // found match, return true to add to result set
+        return true;
+      }
+      // iterate through each row's column data
+      
+    });
+
+  }
   onChangec(c)
   {
     let value=c.target.value.toLowerCase();

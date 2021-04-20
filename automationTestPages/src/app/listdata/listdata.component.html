@@ -8,8 +8,8 @@
     <div class="card-body">
       <div class="row">
         <div class="col-md-4">
-          <input #search id="search" type="text" class="form-control" placeholder="Search" aria-label="Search"
-            aria-describedby="basic-addon1" />
+         
+            <input (keyup)="onKeyUp($event)" placeholder="Search Name" class="form-control"> 
         </div>
         <div class="col-md-4">
           <form [formGroup]="country">
