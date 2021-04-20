@@ -23,6 +23,9 @@ export class ListdataComponent implements OnInit , AfterViewInit {
   public temp: Array<object> = [];
   public rows: Array<object> = [];
   public columns: Array<object>;
+  public nameselected:string=" ";
+  public countryelected:string="choose country";
+  public genderelected:string="choose gender";
   constructor(private httpClient: HttpClient) { }
   ngAfterViewInit(): void {
   
@@ -163,20 +166,38 @@ export class ListdataComponent implements OnInit , AfterViewInit {
   }
   onChangeg(e)
   {
-    console.log(e.target.value);
+   
     let value=e.target.value.toLowerCase();
 
     const keys = Object.keys(this.temp[0]);
+
+    this.genderelected=value
     // assign filtered matches to the active datatable
     this.rows = this.temp.filter(item => {
       console.log(item[keys[1]])
+      if(this.nameselected==" " ||(item[keys[0]] &&
+        item[keys[0]]
+          .toString()
+          .toLowerCase()
+          .indexOf(this.nameselected) == 0))
+          {
+            console.log(item[keys[0]])
+          }
       if (
-        (item[keys[1]] &&
+        ((item[keys[1]] &&
           item[keys[1]]
             .toString()
             .toLowerCase()
             .indexOf(value) == 0) ||
-        !value ||value == 'choose gender'
+        !value ||value == 'choose gender') && (this.nameselected==" " ||(item[keys[0]] &&
+          item[keys[0]]
+            .toString()
+            .toLowerCase()
+            .indexOf(this.nameselected) == 0)) &&( this.countryelected=="choose country" ||(item[keys[2]] &&
+              item[keys[2]]
+                .toString()
+                .toLowerCase()
+                .indexOf(this.countryelected) == 0))
       ) {
         // found match, return true to add to result set
         return true;
@@ -186,23 +207,33 @@ export class ListdataComponent implements OnInit , AfterViewInit {
     });
   }
   onKeyUp(x) { // appending the updated value to the variable
-console.log(x.target.value);
-const value = x.target.value.toLowerCase().trim();
+
+let value = x.target.value.toLowerCase().trim();
     // get the amount of columns in the table
     const count = this.columns.length;
-    
+    this.nameselected=value
     // get the key names of each column in the dataset
     const keys = Object.keys(this.temp[0]);
+  
     // assign filtered matches to the active datatable
     this.rows = this.temp.filter(item => {
+      
       console.log(item[keys[0]])
-      if (
+      if ((
         (item[keys[0]] &&
           item[keys[0]]
             .toString()
             .toLowerCase()
             .indexOf(value) == 0) ||
-        !value
+        !value) && ( this.countryelected=="choose country" ||(item[keys[2]] &&
+          item[keys[2]]
+            .toString()
+            .toLowerCase()
+            .indexOf(this.countryelected) == 0)) && ( this.genderelected=="choose gender" ||(item[keys[1]] &&
+              item[keys[1]]
+                .toString()
+                .toLowerCase()
+                .indexOf(this.genderelected) == 0))
       ) {
         // found match, return true to add to result set
         return true;
@@ -217,16 +248,25 @@ const value = x.target.value.toLowerCase().trim();
     let value=c.target.value.toLowerCase();
 console.log(c)
     const keys = Object.keys(this.temp[0]);
+    this.countryelected=value;
     // assign filtered matches to the active datatable
     this.rows = this.temp.filter(item => {
      // console.log(item[keys[2]])
       if (
-        (item[keys[2]] &&
+        ((item[keys[2]] &&
           item[keys[2]]
             .toString()
             .toLowerCase()
             .indexOf(value) == 0) ||
-        !value ||value == 'choose country'
+        !value ||value == 'choose country')&&(this.genderelected=="choose gender" ||(item[keys[1]] &&
+          item[keys[1]]
+            .toString()
+            .toLowerCase()
+            .indexOf(this.genderelected) == 0)) && (this.nameselected==" " ||(item[keys[0]] &&
+              item[keys[0]]
+                .toString()
+                .toLowerCase()
+                .indexOf(this.nameselected) == 0))
       ) {
         // found match, return true to add to result set
         return true;
