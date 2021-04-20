@@ -21,10 +21,7 @@ export class AdddataComponent implements OnInit {
   submit(){
     console.log(this.form.value);
   }
- 
-  changeGender(e) {
-    console.log(e.target.value);
-  }
+
   constructor() { }
 
   ngOnInit(): void {
