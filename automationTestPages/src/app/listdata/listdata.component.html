@@ -1,56 +1,36 @@
 <div style="align-content: center;">
-<h3>
-   
+  <h3>
+
   </h3>
   <p>search</p>
-  
+
   <div class="card mb-5">
     <div class="card-body">
       <div class="row">
-        <div class="col-md-8">
-          <input
-            #search
-            id="search"
-            type="text"
-            class="form-control"
-            placeholder="Search"
-            aria-label="Search"
-            aria-describedby="basic-addon1"
-          />
-          <form [formGroup]="country"><select formControlName="countryname" (change)="onChangec($event)">
-            <option  >usa</option>
-            <option  >usa</option>
-          </select>
-          <select formControlName="gender" (change)="onChangeg($event)">
-            <option >Male</option>
-            <option  >female</option>
-          </select>
-        </form>
-          <div class="col-md-8">
-            <input
-              #search
-              id="searchgender"
-              type="text"
-              class="form-control"
-              placeholder="Search"
-              aria-label="Search"
-              aria-describedby="basic-addon1"
-            />
+        <div class="col-md-4">
+          <input #search id="search" type="text" class="form-control" placeholder="Search" aria-label="Search"
+            aria-describedby="basic-addon1" />
+        </div>
+        <div class="col-md-4">
+          <form [formGroup]="country">
+            <select formControlName="countryname" (change)="onChangec($event)">
+              <option>usa</option>
+              <option>usa</option>
+            </select>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <form [formGroup]="country">
+            <select formControlName="gender" (change)="onChangeg($event)">
+              <option>Male</option>
+              <option>female</option>
+            </select>
+          </form>
         </div>
       </div>
+
+      <ngx-datatable #table class="bootstrap ngx-datatable" [columns]="columns" [rows]="rows" [columnMode]="'force'"
+        [headerHeight]="35" [rowHeight]="'auto'" [footerHeight]="50" [limit]="10">
+      </ngx-datatable>
     </div>
-  
-    <ngx-datatable
-      #table
-      class="bootstrap ngx-datatable"
-      [columns]="columns"
-      [rows]="rows"
-      [columnMode]="'force'"
-      [headerHeight]="35"
-      [rowHeight]="'auto'"
-      [footerHeight]="50"
-      [limit]="10"
-    >
-    </ngx-datatable>
   </div>
-</div>
