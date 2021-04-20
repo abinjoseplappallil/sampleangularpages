@@ -32,7 +32,8 @@
       </div>
 
       <ngx-datatable #table class="bootstrap ngx-datatable" [columns]="columns" [rows]="rows" [columnMode]="'force'"
-        [headerHeight]="35" [rowHeight]="'auto'" [footerHeight]="50" [limit]="10">
+        [headerHeight]="35" [rowHeight]="'auto'" [footerHeight]="50" >
       </ngx-datatable>
     </div>
+      <a class="nav-link" [routerLink]="['/']" [routerLinkActive]="['selection_active']">Back</a>
   </div>
