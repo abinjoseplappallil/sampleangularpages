@@ -11,6 +11,7 @@ export class AdddataComponent implements OnInit {
     gender: new FormControl('', Validators.required),
     name:  new FormControl('', Validators.required),
     dob:new FormControl('', Validators.required),
+    country:new FormControl('', Validators.required),
   });
    
   get f(){
@@ -28,5 +29,23 @@ export class AdddataComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  countryList: country[] = [
+    new country( "India"),
+    new country( 'USA'),
+    new country( 'England'),
+    new country('Russia'),
+    new country( "South Africa"),
+    new country( 'Austrilia'),
+    new country( 'Maldives'),
+    new country('Other'),
+  ];
 
+}
+export class country {
+  name: string;
+ 
+  constructor(name: string) {
+    this.name = name;
+  }
 }
