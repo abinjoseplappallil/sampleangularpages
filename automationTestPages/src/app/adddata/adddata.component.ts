@@ -19,7 +19,8 @@ export class AdddataComponent implements OnInit {
   }
    
   submit(){
-    console.log(this.form.value);
+    alert("Created Sucessfully")
+    this.form.reset();
   }
 
   constructor() { }
