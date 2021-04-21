@@ -1,386 +1,65 @@
 [
-    {
-      "name": "Ethel Price",
-      "gender": "female",
-      "country": "india"
-    },
-    {
-      "name": "Claudine Neal",
-      "gender": "female",
-      "country": "USA"
+  {
+    "name": "Ethel Price",
+    "gender": "female",
+    "country": "india"
+  },
+  {
+    "name": "Claudine Neal",
+    "gender": "female",
+    "country": "USA"
 
-    },
-    {
-      "name": "Beryl Rice",
-      "gender": "female",
-      "country": "USA"
-  
-    },
-    {
-      "name": "Wilder Gonzales",
-      "gender": "male",
-      "country": "britan"
-    },
-    {
-      "name": "Georgina Schultz",
-      "gender": "female",
-      "country": "japan"
-    },
-    {
-      "name": "Carroll Buchanan",
-      "gender": "male",
-      "country": "india"
-    },
-    {
-      "name": "Valarie Atkinson",
-      "gender": "female",
-      "country": "russia"
-    },
-    {
-      "name": "Schroeder Mathews",
-      "gender": "male",
-      "country": "bhutan"
-    },
-    {
-      "name": "Lynda Mendoza",
-      "gender": "female",
-      "country": "kazhakistan"
-    },
-    {
-      "name": "Sarah Massey",
-      "gender": "female",
-      "country": "kuridistan"
-    },
-    {
-      "name": "Robles Boyle",
-      "gender": "male",
-      "country": "oman"
-    },
-    {
-      "name": "Evans Hickman",
-      "gender": "male",
-      "country": "urugyay"
-    },
-    {
-      "name": "Dawson Barber",
-      "gender": "male",
-      "country": "india"
-    },
-    {
-      "name": "Bruce Strong",
-      "gender": "male",
-      "country": "Xyqag"
-    },
-    {
-      "name": "Nellie Whitfield",
-      "gender": "female",
-      "country": "Exospace"
-    },
-    {
-      "name": "Jackson Macias",
-      "gender": "male",
-      "country": "Aquamate"
-    },
-    {
-      "name": "Pena Pena",
-      "gender": "male",
-      "country": "Quarx"
-    },
-    {
-      "name": "Lelia Gates",
-      "gender": "female",
-      "country": "Proxsoft"
-    },
-    {
-      "name": "Letitia Vasquez",
-      "gender": "female",
-      "country": "Slumberia"
-    },
-    {
-      "name": "Trevino Moreno",
-      "gender": "male",
-      "country": "Conjurica"
-    },
-    {
-      "name": "Barr Page",
-      "gender": "male",
-      "country": "Apex"
-    },
-    {
-      "name": "Kirkland Merrill",
-      "gender": "male",
-      "country": "Utara"
-    },
-    {
-      "name": "Blanche Conley",
-      "gender": "female",
-      "country": "Imkan"
-    },
-    {
-      "name": "Atkins Dunlap",
-      "gender": "male",
-      "country": "Comveyor"
-    },
-    {
-      "name": "Everett Foreman",
-      "gender": "male",
-      "country": "Maineland"
-    },
-    {
-      "name": "Gould Randolph",
-      "gender": "male",
-      "country": "Intergeek"
-    },
-    {
-      "name": "Kelli Leon",
-      "gender": "female",
-      "country": "Verbus"
-    },
-    {
-      "name": "Freda Mason",
-      "gender": "female",
-      "country": "Accidency"
-    },
-    {
-      "name": "Tucker Maxwell",
-      "gender": "male",
-      "country": "Lumbrex"
-    },
-    {
-      "name": "Yvonne Parsons",
-      "gender": "female",
-      "country": "Zolar"
-    },
-    {
-      "name": "Woods Key",
-      "gender": "male",
-      "country": "Bedder"
-    },
-    {
-      "name": "Stephens Reilly",
-      "gender": "male",
-      "country": "Acusage"
-    },
-    {
-      "name": "Mcfarland Sparks",
-      "gender": "male",
-      "country": "Comvey"
-    },
-    {
-      "name": "Jocelyn Sawyer",
-      "gender": "female",
-      "country": "Fortean"
-    },
-    {
-      "name": "Renee Barr",
-      "gender": "female",
-      "country": "Kiggle"
-    },
-    {
-      "name": "Gaines Beck",
-      "gender": "male",
-      "country": "Sequitur"
-    },
-    {
-      "name": "Luisa Farrell",
-      "gender": "female",
-      "country": "Cinesanct"
-    },
-    {
-      "name": "Robyn Strickland",
-      "gender": "female",
-      "country": "Obones"
-    },
-    {
-      "name": "Roseann Jarvis",
-      "gender": "female",
-      "country": "Aquazure"
-    },
-    {
-      "name": "Johnston Park",
-      "gender": "male",
-      "country": "Netur"
-    },
-    {
-      "name": "Wong Craft",
-      "gender": "male",
-      "country": "Opticall"
-    },
-    {
-      "name": "Merritt Cole",
-      "gender": "male",
-      "country": "Techtrix"
-    },
-    {
-      "name": "Dale Byrd",
-      "gender": "female",
-      "country": "Kneedles"
-    },
-    {
-      "name": "Sara Delgado",
-      "gender": "female",
-      "country": "Netagy"
-    },
-    {
-      "name": "Alisha Myers",
-      "gender": "female",
-      "country": "Intradisk"
-    },
-    {
-      "name": "Felecia Smith",
-      "gender": "female",
-      "country": "Futurity"
-    },
-    {
-      "name": "Neal Harvey",
-      "gender": "male",
-      "country": "Pyramax"
-    },
-    {
-      "name": "Nola Miles",
-      "gender": "female",
-      "country": "Sonique"
-    },
-    {
-      "name": "Herring Pierce",
-      "gender": "male",
-      "country": "Geeketron"
-    },
-    {
-      "name": "Shelley Rodriquez",
-      "gender": "female",
-      "country": "Bostonic"
-    },
-    {
-      "name": "Cora Chase",
-      "gender": "female",
-      "country": "Isonus"
-    },
-    {
-      "name": "Mckay Santos",
-      "gender": "male",
-      "country": "Amtas"
-    },
-    {
-      "name": "Hilda Crane",
-      "gender": "female",
-      "country": "Jumpstack"
-    },
-    {
-      "name": "Jeanne Lindsay",
-      "gender": "female",
-      "country": "Genesynk"
-    },
-    {
-      "name": "Frye Sharpe",
-      "gender": "male",
-      "country": "Eplode"
-    },
-    {
-      "name": "Velma Fry",
-      "gender": "female",
-      "country": "Ronelon"
-    },
-    {
-      "name": "Reyna Espinoza",
-      "gender": "female",
-      "country": "Prismatic"
-    },
-    {
-      "name": "Spencer Sloan",
-      "gender": "male",
-      "country": "Comverges"
-    },
-    {
-      "name": "Graham Marsh",
-      "gender": "male",
-      "country": "Medifax"
-    },
-    {
-      "name": "Hale Boone",
-      "gender": "male",
-      "country": "Digial"
-    },
-    {
-      "name": "Wiley Hubbard",
-      "gender": "male",
-      "country": "Zensus"
-    },
-    {
-      "name": "Blackburn Drake",
-      "gender": "male",
-      "country": "Frenex"
-    },
-    {
-      "name": "Franco Hunter",
-      "gender": "male",
-      "country": "Rockabye"
-    },
-    {
-      "name": "Barnett Case",
-      "gender": "male",
-      "country": "Norali"
-    },
-    {
-      "name": "Alexander Foley",
-      "gender": "male",
-      "country": "Geekosis"
-    },
-    {
-      "name": "Lynette Stein",
-      "gender": "female",
-      "country": "Macronaut"
-    },
-    {
-      "name": "Anthony Joyner",
-      "gender": "male",
-      "country": "Senmei"
-    },
-    {
-      "name": "Garrett Brennan",
-      "gender": "male",
-      "country": "Bluegrain"
-    },
-    {
-      "name": "Betsy Horton",
-      "gender": "female",
-      "country": "Zilla"
-    },
-    {
-      "name": "Patton Small",
-      "gender": "male",
-      "country": "Genmex"
-    },
-    {
-      "name": "Lakisha Huber",
-      "gender": "female",
-      "country": "Insource"
-    },
-    {
-      "name": "Lindsay Avery",
-      "gender": "female",
-      "country": "Unq"
-    },
-    {
-      "name": "Ayers Hood",
-      "gender": "male",
-      "country": "Accuprint"
-    },
-    {
-      "name": "Torres Durham",
-      "gender": "male",
-      "country": "Uplinx"
-    },
-    {
-      "name": "Vincent Hernandez",
-      "gender": "male",
-      "country": "Talendula"
-    },
-    {
-      "name": "Baird Ryan",
-      "gender": "male",
-      "country": "Aquasseur"
-    }
-   
+  },
+  {
+    "name": "Beryl Rice",
+    "gender": "female",
+    "country": "USA"
+
+  },
+  {
+    "name": "Wilder Gonzales",
+    "gender": "male",
+    "country": "britan"
+  },
+  {
+    "name": "Georgina Schultz",
+    "gender": "female",
+    "country": "japan"
+  },
+  {
+    "name": "Carroll Buchanan",
+    "gender": "male",
+    "country": "india"
+  },
+  {
+    "name": "Valarie Atkinson",
+    "gender": "female",
+    "country": "russia"
+  },
+  {
+    "name": "Schroeder Mathews",
+    "gender": "male",
+    "country": "USA"
+  },
+  {
+    "name": "Lynda Mendoza",
+    "gender": "female",
+    "country": "india"
+  },
+  {
+    "name": "Sarah Massey",
+    "gender": "female",
+    "country": "India"
+  },
+  {
+    "name": "Robles Boyle",
+    "gender": "male",
+    "country": "japan"
+  },
+  {
+    "name": "Evans Hickman",
+    "gender": "male",
+    "country": "japan"
+  }
   ]
   

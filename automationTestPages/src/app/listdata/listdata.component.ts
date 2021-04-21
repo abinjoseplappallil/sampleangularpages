@@ -11,7 +11,7 @@ import { FormGroup, FormControl, Validators,FormArray } from '@angular/forms';
 export class ListdataComponent implements OnInit , AfterViewInit {
   @ViewChild('search', { static: false }) search: any;
   
-  countries: any = ['India', 'usa', 'britan', 'japan', 'india', 'oman', 'kuridistan', 'urugyay', 'bhutan', ' kazhakistan'];
+  countries: any = ['India', 'britan', 'japan', 'india','russia',  'USA'];
   
   gender: any = ['Male','Female'];
   country = new FormGroup({ 
@@ -127,27 +127,27 @@ export class ListdataComponent implements OnInit , AfterViewInit {
       {
         "name": "Schroeder Mathews",
         "gender": "male",
-        "country": "bhutan"
+        "country": "USA"
       },
       {
         "name": "Lynda Mendoza",
         "gender": "female",
-        "country": "kazhakistan"
+        "country": "india"
       },
       {
         "name": "Sarah Massey",
         "gender": "female",
-        "country": "kuridistan"
+        "country": "India"
       },
       {
         "name": "Robles Boyle",
         "gender": "male",
-        "country": "oman"
+        "country": "japan"
       },
       {
         "name": "Evans Hickman",
         "gender": "male",
-        "country": "urugyay"
+        "country": "japan"
       }
     ];
   }
