@@ -26,3 +26,22 @@ p {
   .row{
     margin-bottom: 7px;
   }
+  .change1{
+    background: rgb(0,201,255);
+    background: linear-gradient(90deg, rgba(0,201,255,1) 28%, rgba(146,254,157,1) 66%);
+  }
+  .btn{
+    
+    width: 230px;
+    margin: 0 35px 20px ;
+    height: 45px;
+    padding: 6px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: grey;
+    font-size: 14px;
+ }
+ .btn a{
+  color: rgb(240, 230, 230);
+ }

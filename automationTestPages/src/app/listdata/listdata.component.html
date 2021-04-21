@@ -3,7 +3,7 @@
 
   </h3>
 
-  <div class="card mb-5">
+  <div class="change1">
     <div class="card-body">
       <div class="row">
         <div class="col-md-4">
@@ -33,5 +33,8 @@
         [headerHeight]="35" [rowHeight]="'auto'"  [limit]="10" [footerHeight]="50">
       </ngx-datatable>
     </div>
-    <a class="nav-link" [routerLink]="['/']" [routerLinkActive]="['selection_active']">Back</a>
+    <div class="col-md-2"> 
+      <button class="btn btn-success"><a class="nav-link" [routerLink]="['/']" [routerLinkActive]="['selection_active']">Back</a></button>
+    </div>
+    
   </div>
