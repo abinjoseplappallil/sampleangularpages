@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+   background: rgb(0,201,255);
+   background: linear-gradient(90deg, rgba(0,201,255,1) 28%, rgba(146,254,157,1) 66%);}
 .ngx-datatable.bootstrap {
     box-shadow: none;
     font-size: 13px;
