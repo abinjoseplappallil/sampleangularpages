@@ -9,7 +9,7 @@ import { FormGroup, FormControl} from '@angular/forms';
 export class ListdataComponent implements OnInit  {
   @ViewChild('search', { static: false }) search: any;
   
-  countries: any = ['India', 'britan', 'japan', 'india','russia',  'USA'];
+  countries: any = ['India', 'Britan', 'Japan','Italy','Russia', 'USA','China', 'Brazil','Canada','Germany'];
   
   gender: any = ['Male','Female'];
   country = new FormGroup({ 
@@ -33,65 +33,206 @@ export class ListdataComponent implements OnInit  {
     this.rows = this.temp = [
       {
         "name": "Ethel Price",
-        "gender": "female",
-        "country": "india"
+        "gender": "Female",
+        "country": "China"
       },
       {
         "name": "Claudine Neal",
-        "gender": "female",
+        "gender": "Female",
         "country": "USA"
   
       },
       {
         "name": "Beryl Rice",
-        "gender": "female",
+        "gender": "Female",
         "country": "USA"
     
       },
       {
         "name": "Wilder Gonzales",
-        "gender": "male",
-        "country": "britan"
+        "gender": "Male",
+        "country": "China"
       },
       {
         "name": "Georgina Schultz",
-        "gender": "female",
-        "country": "japan"
+        "gender": "Female",
+        "country": "Japan"
       },
       {
         "name": "Carroll Buchanan",
-        "gender": "male",
-        "country": "india"
+        "gender": "Male",
+        "country": "India"
       },
       {
         "name": "Valarie Atkinson",
-        "gender": "female",
-        "country": "russia"
+        "gender": "Female",
+        "country": "Canada"
       },
       {
         "name": "Schroeder Mathews",
-        "gender": "male",
+        "gender": "Male",
         "country": "USA"
       },
       {
         "name": "Lynda Mendoza",
-        "gender": "female",
-        "country": "india"
+        "gender": "Female",
+        "country": "India"
       },
       {
         "name": "Sarah Massey",
-        "gender": "female",
+        "gender": "Female",
         "country": "India"
       },
       {
         "name": "Robles Boyle",
-        "gender": "male",
-        "country": "japan"
+        "gender": "Male",
+        "country": "Japan"
       },
       {
         "name": "Evans Hickman",
-        "gender": "male",
-        "country": "japan"
+        "gender": "Male",
+        "country": "Japan"
+      },
+      {
+        "name": "Garrett Brennan",
+        "gender": "Male",
+        "country": "Italy"
+      },
+      {
+        "name": "Betsy Horton",
+        "gender": "Female",
+        "country": "Germany"
+      },
+      
+      {
+        "name": "Vincent Hernandez",
+        "gender": "Male",
+        "country": "Italy"
+      },
+      {
+        "name": "Baird Ryan",
+        "gender": "Male",
+        "country": "Germany"
+      },
+      {
+        "name": "Georgia Mercer",
+        "gender": "Female",
+        "country": "Germany"
+      },
+      {
+        "name": "Francesca Elliott",
+        "gender": "Female",
+        "country": "Italy"
+      },
+      {
+        "name": "Lyons Peters",
+        "gender": "Male",
+        "country": "Italy"
+      },
+      {
+        "name": "Kristi Brewer",
+        "gender": "Female",
+        "country": "Brazil"
+      },
+      {
+        "name": "Tonya Bray",
+        "gender": "Female",
+        "country": "Germany"
+      },
+      {
+        "name": "Valenzuela Huff",
+        "gender": "Male",
+        "country": "Germany"
+      },
+      {
+        "name": "Tiffany Anderson",
+        "gender": "Female",
+        "country": "Brazil"
+      },
+      {
+        "name": "Jerri King",
+        "gender": "Female",
+        "country": "Brazil"
+      },
+      {
+        "name": "Rocha Meadows",
+        "gender": "Male",
+        "country": "Russia"
+      },
+      {
+        "name": "Marcy Green",
+        "gender": "Female",
+        "country": "Russia"
+      },
+      {
+        "name": "Kirk Cross",
+        "gender": "Male",
+        "country": "Brazil"
+      },
+      {
+        "name": "Hattie Mullen",
+        "gender": "Female",
+        "country": "Britan"
+      },
+      {
+        "name": "Deann Bridges",
+        "gender": "Female",
+        "country": "Russia"
+      },
+      {
+        "name": "Chaney Roach",
+        "gender": "Male",
+        "country": "Brazil"
+      },
+      {
+        "name": "Consuelo Dickson",
+        "gender": "Female",
+        "country": "India"
+      },
+      {
+        "name": "Billie Rowe",
+        "gender": "Female",
+        "country": "India"
+      },
+      {
+        "name": "Bean Donovan",
+        "gender": "Male",
+        "country": "India"
+      },
+      {
+        "name": "Lancaster Patel",
+        "gender": "Male",
+        "country": "Canada"
+      },
+      {
+        "name": "Rosa Dyer",
+        "gender": "Female",
+        "country": "Russia"
+      },
+      {
+        "name": "Christine Compton",
+        "gender": "Female",
+        "country": "China"
+      },
+      {
+        "name": "Milagros Finch",
+        "gender": "Female",
+        "country": "China"
+      },
+      {
+        "name": "Ericka Alvarado",
+        "gender": "Female",
+        "country": "Canada"
+      },
+      {
+        "name": "Sylvia Sosa",
+        "gender": "Female",
+        "country": "India"
+      },
+      {
+        "name": "Humphrey Curtis",
+        "gender": "Male",
+        "country": "Canada"
       }
     ];
   }
