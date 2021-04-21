@@ -50,7 +50,7 @@ export class ListdataComponent implements OnInit , AfterViewInit {
     const keys = Object.keys(this.temp[0]);
     // assign filtered matches to the active datatable
     this.rows = this.temp.filter(item => {
-      console.log(item[keys[0]])
+  
       if (
         (item[keys[0]] &&
           item[keys[0]]
@@ -80,7 +80,7 @@ export class ListdataComponent implements OnInit , AfterViewInit {
         this.rows = [...this.temp];
       },
       (err: HttpErrorResponse) => {
-        console.log (err.message);
+    
       }
     );
   }
@@ -174,15 +174,8 @@ export class ListdataComponent implements OnInit , AfterViewInit {
     this.genderelected=value
     // assign filtered matches to the active datatable
     this.rows = this.temp.filter(item => {
-      console.log(item[keys[1]])
-      if(this.nameselected==" " ||(item[keys[0]] &&
-        item[keys[0]]
-          .toString()
-          .toLowerCase()
-          .indexOf(this.nameselected) == 0))
-          {
-            console.log(item[keys[0]])
-          }
+  
+      
       if (
         ((item[keys[1]] &&
           item[keys[1]]
@@ -218,7 +211,7 @@ let value = x.target.value.toLowerCase().trim();
     // assign filtered matches to the active datatable
     this.rows = this.temp.filter(item => {
       
-      console.log(item[keys[0]])
+  
       if ((
         (item[keys[0]] &&
           item[keys[0]]
@@ -246,7 +239,7 @@ let value = x.target.value.toLowerCase().trim();
   onChangec(c)
   {
     let value=c.target.value.toLowerCase();
-console.log(c)
+
     const keys = Object.keys(this.temp[0]);
     this.countryelected=value;
     // assign filtered matches to the active datatable
