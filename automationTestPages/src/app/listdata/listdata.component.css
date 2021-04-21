@@ -45,3 +45,11 @@ p {
  .btn a{
   color: rgb(240, 230, 230);
  }
+ h1{
+  color: white;
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5px;
+}

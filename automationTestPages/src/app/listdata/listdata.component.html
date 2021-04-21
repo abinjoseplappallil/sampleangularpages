@@ -1,8 +1,7 @@
 <div style="align-content: center;">
-  <h3>
-
-  </h3>
-
+  <h1>
+    Job Seek List
+  </h1>
   <div class="change1">
     <div class="card-body">
       <div class="row">
@@ -30,11 +29,12 @@
       </div>
 
       <ngx-datatable #table class="bootstrap ngx-datatable" [columns]="columns" [rows]="rows" [columnMode]="'force'"
-        [headerHeight]="35" [rowHeight]="'auto'"  [limit]="10" [footerHeight]="50">
+        [headerHeight]="35" [rowHeight]="'auto'" [limit]="10" [footerHeight]="50">
       </ngx-datatable>
     </div>
-    <div class="col-md-2"> 
-      <button class="btn btn-success"><a class="nav-link" [routerLink]="['/']" [routerLinkActive]="['selection_active']">Back</a></button>
+    <div class="col-md-2">
+      <button class="btn btn-success"><a class="nav-link" [routerLink]="['/']"
+          [routerLinkActive]="['selection_active']">Back</a></button>
     </div>
-    
+
   </div>
