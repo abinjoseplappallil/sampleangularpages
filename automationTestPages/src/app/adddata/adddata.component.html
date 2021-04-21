@@ -26,6 +26,7 @@
                 <label for="country">Country:</label>
                 <br>
                 <select formControlName="country">
+                    <option value="" disabled selected>Choose country</option>
                     <option *ngFor="let c of countryList">
                         {{c.name}}
                     </option>
