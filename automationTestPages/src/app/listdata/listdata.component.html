@@ -2,19 +2,17 @@
   <h3>
 
   </h3>
-  
 
   <div class="card mb-5">
     <div class="card-body">
       <div class="row">
         <div class="col-md-4">
-         
-            <input (keyup)="onKeyUp($event)" placeholder="Search Name" class="form-control"> 
+          <input (keyup)="onKeyUp($event)" placeholder="Search Name" class="form-control">
         </div>
         <div class="col-md-4">
           <form [formGroup]="country">
             <select formControlName="countryname" (change)="onChangec($event)">
-              <option selected >Choose country</option>
+              <option selected>Choose country</option>
 
               <option *ngFor="let co of  countries">{{co}}</option>
             </select>
@@ -23,7 +21,7 @@
         <div class="col-md-4">
           <form [formGroup]="country">
             <select formControlName="gender" (change)="onChangeg($event)">
-              <option selected >Choose Gender</option>
+              <option selected>Choose Gender</option>
 
               <option *ngFor="let ge of gender ">{{ge}}</option>
             </select>
@@ -32,8 +30,8 @@
       </div>
 
       <ngx-datatable #table class="bootstrap ngx-datatable" [columns]="columns" [rows]="rows" [columnMode]="'force'"
-        [headerHeight]="35" [rowHeight]="'auto'" [footerHeight]="50" >
+        [headerHeight]="35" [rowHeight]="'auto'" [footerHeight]="50">
       </ngx-datatable>
     </div>
-      <a class="nav-link" [routerLink]="['/']" [routerLinkActive]="['selection_active']">Back</a>
-  </div>9+8
+    <a class="nav-link" [routerLink]="['/']" [routerLinkActive]="['selection_active']">Back</a>
+  </div>
